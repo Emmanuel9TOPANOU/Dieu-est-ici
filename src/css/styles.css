@@ -1,0 +1,52 @@
+/* Importation de la police Poppins via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* --- CONFIGURATION GLOBALE --- */
+
+html,
+body {
+    /* Empêche le défilement horizontal indésirable */
+    overflow-x: hidden;
+    /* Force la largeur à 100% de l'écran */
+    width: 100%;
+}
+
+body.aos-animate {
+    /* Sécurité supplémentaire pour les animations AOS */
+    overflow-x: hidden !important;
+}
+
+
+
+
+/* Application de la police Poppins à tout le texte */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+

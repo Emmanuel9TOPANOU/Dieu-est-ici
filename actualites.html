@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dieu est ici</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" type="image/png" href="src/assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@latest/dist/css/phosphor.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body>
+
+
+
+    <div id="fixed-header-container"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-md border-b border-white/20">
+
+        <div id="top-bar"
+            class="w-full bg-[#1C2747] text-white text-sm font-medium px-4 md:px-8 py-2.5 flex flex-col sm:flex-row justify-between items-center gap-3 select-none transition-all duration-300 ease-in-out">
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
+                <a href="tel:+2290197219996"
+                    class="flex items-center gap-2 hover:text-[#FFAF00] transition-colors duration-200">
+                    <i class="ph-bold ph-phone text-[#FFAF00] text-base"></i>
+                    <span>+229 01 97 21 99 96</span>
+                </a>
+
+                <div class="flex items-center gap-2">
+                    <i class="ph-bold ph-map-pin text-[#FFAF00] text-base"></i>
+                    <span>Womey ADJIHPEGON</span>
+                </div>
+            </div>
+
+            <div class="tracking-wide text-center uppercase font-semibold text-[#FFAF00]">
+                FOI - SOLIDARITE - ESPOIR
+            </div>
+
+            <div class="flex items-center gap-5 text-lg">
+                <a href="#" aria-label="Facebook"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-facebook-logo"></i>
+                </a>
+
+                <a href="#" aria-label="X"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-x-logo"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-youtube-logo"></i>
+                </a>
+            </div>
+        </div>
+
+        <header class="relative w-full h-24 flex items-center">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+                <div class="flex items-center shrink-0">
+                    <img src="src/assets/images/logo.png" alt="Dieu est ici" class="h-20 w-auto object-contain">
+                </div>
+
+                <div class="flex items-center gap-3 lg:gap-4">
+                    <button type="button"
+                        class="inline-flex xl:hidden items-center justify-center w-11 h-11 rounded-xl border border-[#1C2747]/10 bg-white text-[#1C2747] shadow-sm transition-colors duration-200 hover:bg-slate-50"
+                        aria-controls="mobile-navigation" aria-expanded="false" data-nav-toggle>
+                        <i class="ph-bold ph-list text-2xl" data-nav-icon></i>
+                        <span class="sr-only">Ouvrir le menu</span>
+                    </button>
+                </div>
+
+                <nav class="hidden xl:flex items-center gap-8 text-[#1C2747] font-medium">
+                    <a href="index.html" class="text-[#FFAF00] transition-colors duration-200">Accueil</a>
+                    <a href="a-propos.html" class="hover:text-[#FFAF00] transition-colors duration-200">A propos</a>
+                    <a href="actions.html" class="hover:text-[#FFAF00] transition-colors duration-200">Nos
+                        actions</a>
+                    <a href="actualites.html" class="hover:text-[#FFAF00] transition-colors duration-200">Actualités</a>
+                    <a href="galerie.html" class="hover:text-[#FFAF00] transition-colors duration-200">Galerie</a>
+                    <a href="rejoindre.html" class="hover:text-[#FFAF00] transition-colors duration-200">Nous
+                        rejoindre</a>
+                </nav>
+
+                <div class="hidden sm:block">
+                    <a href="dons.html"
+                        class="inline-flex items-center gap-2 bg-[#1C2747] border border-white/10 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md hover:bg-opacity-90 transition-all duration-200">
+                        <i class="ph-bold ph-heart text-[#FFAF00] text-lg"></i>
+                        <span>Faire un don</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sidebar mobile (hors du header) -->
+    <div id="mobile-navigation"
+        class="fixed top-0 right-0 h-full w-full max-w-sm z-50 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out xl:hidden overflow-y-auto">
+        <div class="flex flex-col h-full">
+            <!-- En-tête de la sidebar -->
+            <div class="flex items-center justify-between p-4 border-b border-slate-200 bg-white sticky top-0">
+                <div class="flex items-center gap-2">
+                    <img src="src/assets/images/logo.png" alt="Dieu est ici" class="h-10 w-auto object-contain">
+                    <span class="font-semibold text-[#1C2747]">Menu</span>
+                </div>
+                <button type="button"
+                    class="close-sidebar p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
+                    aria-label="Fermer le menu">
+                    <i class="ph-bold ph-x text-2xl text-[#1C2747]"></i>
+                </button>
+            </div>
+
+            <!-- Liens de navigation -->
+            <div class="flex-1 py-6 px-4">
+                <div class="flex flex-col gap-2 text-[#1C2747] font-medium">
+                    <a href="index.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Accueil</a>
+                    <a href="a-propos.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">A
+                        propos</a>
+                    <a href="actions.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Nos
+                        actions</a>
+                    <a href="actualites.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Actualités</a>
+                    <a href="galerie.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Galerie</a>
+                    <a href="rejoindre.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Nous
+                        rejoindre</a>
+                </div>
+
+                <a href="dons.html"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1C2747] px-5 py-3 font-semibold text-white shadow-md transition-colors duration-200 hover:bg-opacity-90">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-lg"></i>
+                    <span>Faire un don</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay (fond sombre derrière la sidebar) -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 hidden xl:hidden transition-opacity duration-300">
+    </div>
+
+    <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col  pt-36"
+        style="background-image: url('src/assets/images/img12.jpeg');">
+
+        <div
+            class="flex-1 max-w-5xl mx-auto px-4 flex flex-col justify-center items-center text-center pb-16 relative z-10">
+
+            <h1
+                class="text-[#1C2747] text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] max-w-4xldrop-shadow-sm">
+                Nos actualités
+            </h1>
+
+
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+                <a href="dons.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1C2747] text-white px-8 py-3.5 rounded-xl font-bold shadow-lg hover:bg-opacity-90 transition-all duration-200 text-base border border-white/10">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-xl"></i>
+                    <span>Faire un don</span>
+                </a>
+
+                <a href="rejoindre.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center border-3 border-[#1C2747] text-[#1C2747] px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:text-[#1C2747] transition-all duration-200 text-base">
+                    Nous rejoindre
+                </a>
+            </div>
+
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/90 pointer-events-none z-0">
+        </div>
+
+    </section>
+
+
+
+    <section class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-16 bg-white flex flex-col items-center">
+
+        <div class="text-center space-y-3 mb-12">
+            <h2
+                class="text-3xl sm:text-4xl font-extrabold text-brand-blue tracking-tight leading-tight max-w-xl mx-auto">
+                Les actualités liées à nos actions
+            </h2>
+            <div class="w-24 h-1 bg-brand-gold mx-auto rounded-full"></div>
+        </div>
+
+        <div
+            class="w-full max-w-4xl bg-[#e2e4eb]/50 border border-slate-300 rounded-xl p-10 sm:p-16 flex flex-col items-center justify-center text-center space-y-4 shadow-sm backdrop-blur-sm transition-all duration-300">
+
+            <div class="text-brand-blue">
+                <svg class="w-16 h-16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 10.5h.008v.008H9V10.5Zm6 0h.008v.008H6V10.5Z" stroke-width="3" />
+                </svg>
+            </div>
+
+            <p class="text-xl sm:text-2xl font-semibold text-brand-blue/90 tracking-wide">
+                Aucune actualité trouvée
+            </p>
+        </div>
+
+    </section>
+
+
+
+
+<section class="w-full bg-cover bg-center bg-no-repeat py-10 md:py-14 select-none relative"
+        style="background-image: url('src/assets/images/img9.jpg');">    
+
+        <div class="absolute inset-0 bg-black/60 pointer-events-none z-0"></div>
+
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-16 relative z-10">
+
+            <div class="w-full lg:w-5/12 flex flex-col justify-center text-left">
+                <h2 class="text-white text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight max-w-sm">
+                    Nous sommes à votre écoute
+                </h2>
+
+                <div class="mt-10 space-y-6">
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1C2747] text-[#FFAF00] shadow-sm border border-white/10">
+                            <i class="ph-bold ph-phone text-xl"></i>
+                        </div>
+                        <span class="text-white font-semibold text-base sm:text-lg tracking-wide">
+                            +229 01 97 21 99 96
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1C2747] text-[#FFAF00] shadow-sm border border-white/10">
+                            <i class="ph-bold ph-map-pin text-xl"></i>
+                        </div>
+                        <span class="text-white font-semibold text-base sm:text-lg tracking-wide">
+                            Womey ADJIHPEGON
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1C2747] text-[#FFAF00] shadow-sm border border-white/10">
+                            <i class="ph-bold ph-envelope text-xl"></i>
+                        </div>
+                        <a href="mailto:jeremyadetola@gmail.com"
+                            class="text-white font-semibold text-base sm:text-lg tracking-wide hover:text-[#FFAF00] transition-colors duration-200">
+                            jeremyadetola@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full lg:w-7/12">
+                <div
+                    class="bg-[#1C2747] text-white p-6 sm:p-10 rounded-3xl shadow-xl border border-white/10 flex flex-col w-full">
+
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-wide mb-8">
+                        Remplissez le formulaire
+                    </h3>
+
+                    <form action="#" method="POST" onsubmit="sendToWhatsApp(event)" class="space-y-6">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="last_name" class="text-sm font-medium text-slate-300">Nom</label>
+                                <input type="text" id="last_name" name="last_name" placeholder="ABBO"
+                                    class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200"
+                                    required>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="first_name" class="text-sm font-medium text-slate-300">Prénom</label>
+                                <input type="text" id="first_name" name="first_name" placeholder="Marc"
+                                    class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-sm font-medium text-slate-300">Email</label>
+                            <input type="email" id="email" name="email" placeholder="marcabbo@gmail.com"
+                                class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200"
+                                required>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-sm font-medium text-slate-300">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200 resize-none"
+                                required></textarea>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-auto inline-flex justify-center items-center bg-[#FFAF00] text-[#1C2747] text-base font-extrabold px-8 py-3.5 rounded-xl shadow-md hover:bg-opacity-90 active:scale-95 transition-all duration-200">
+                                Soumettre
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            const lastName = document.getElementById('last_name').value;
+            const firstName = document.getElementById('first_name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const phoneNumber = "2290197219996";
+
+            const text = `Nouveau message de contact\n\n` +
+                `Nom : ${lastName}\n` +
+                `Prénom : ${firstName}\n` +
+                `Email : ${email}\n\n` +
+                `Message :\n${message}`;
+
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(text)}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+
+
+    <footer class="w-full bg-[#1C2747] text-white pt-16 pb-8 select-none border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+
+                <div class="lg:col-span-4 flex flex-col gap-6">
+                    <div class="flex items-center">
+                        <img src="src/assets/images/logo.png" alt="Logo DIEU EST ICI"
+                            class="h-16 w-auto object-contain">
+                    </div>
+                    <p class="text-slate-300 text-sm sm:text-base font-medium leading-relaxed max-w-sm">
+                        L'ONG DIEU EST ICI œuvre pour la transformation spirituelle, sociale et professionnelle des
+                        personnes
+                        vulnérables en Afrique de l'Ouest.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-3 lg:pl-8 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Lien rapide
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                A propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="actions.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Nos actions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="galerie.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Galerie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="rejoindre.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Ressource
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="contact.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dons.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Faire un don
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Politique de confidentialité
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="politique.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Confidentialité CGU
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col items-center justify-center text-center">
+                <p class="text-slate-400 text-xs sm:text-sm font-medium tracking-wide">
+                    Copyright@ DIEU EST ICI 2026
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="src/scripts/script-index.js"></script>
+
+
+
+
+</body>
+
+</html>

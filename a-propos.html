@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dieu est ici</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" type="image/png" href="src/assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@latest/dist/css/phosphor.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body>
+
+
+
+    <div id="fixed-header-container"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-md border-b border-white/20">
+
+        <div id="top-bar"
+            class="w-full bg-[#1C2747] text-white text-sm font-medium px-4 md:px-8 py-2.5 flex flex-col sm:flex-row justify-between items-center gap-3 select-none transition-all duration-300 ease-in-out">
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
+                <a href="tel:+2290197219996"
+                    class="flex items-center gap-2 hover:text-[#FFAF00] transition-colors duration-200">
+                    <i class="ph-bold ph-phone text-[#FFAF00] text-base"></i>
+                    <span>+229 01 97 21 99 96</span>
+                </a>
+
+                <div class="flex items-center gap-2">
+                    <i class="ph-bold ph-map-pin text-[#FFAF00] text-base"></i>
+                    <span>Womey ADJIHPEGON</span>
+                </div>
+            </div>
+
+            <div class="tracking-wide text-center uppercase font-semibold text-[#FFAF00]">
+                FOI - SOLIDARITE - ESPOIR
+            </div>
+
+            <div class="flex items-center gap-5 text-lg">
+                <a href="#" aria-label="Facebook"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-facebook-logo"></i>
+                </a>
+
+                <a href="#" aria-label="X"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-x-logo"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-youtube-logo"></i>
+                </a>
+            </div>
+        </div>
+
+        <header class="relative w-full h-24 flex items-center">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+                <div class="flex items-center shrink-0">
+                    <img src="src/assets/images/logo.png" alt="Dieu est ici" class="h-20 w-auto object-contain">
+                </div>
+
+                <div class="flex items-center gap-3 lg:gap-4">
+                    <button type="button"
+                        class="inline-flex xl:hidden items-center justify-center w-11 h-11 rounded-xl border border-[#1C2747]/10 bg-white text-[#1C2747] shadow-sm transition-colors duration-200 hover:bg-slate-50"
+                        aria-controls="mobile-navigation" aria-expanded="false" data-nav-toggle>
+                        <i class="ph-bold ph-list text-2xl" data-nav-icon></i>
+                        <span class="sr-only">Ouvrir le menu</span>
+                    </button>
+                </div>
+
+                <nav class="hidden xl:flex items-center gap-8 text-[#1C2747] font-medium">
+                    <a href="index.html" class="text-[#FFAF00] transition-colors duration-200">Accueil</a>
+                    <a href="a-propos.html" class="hover:text-[#FFAF00] transition-colors duration-200">A propos</a>
+                    <a href="actions.html" class="hover:text-[#FFAF00] transition-colors duration-200">Nos
+                        actions</a>
+                    <a href="actualites.html" class="hover:text-[#FFAF00] transition-colors duration-200">Actualités</a>
+                    <a href="galerie.html" class="hover:text-[#FFAF00] transition-colors duration-200">Galerie</a>
+                    <a href="rejoindre.html" class="hover:text-[#FFAF00] transition-colors duration-200">Nous
+                        rejoindre</a>
+                </nav>
+
+                <div class="hidden sm:block">
+                    <a href="dons.html"
+                        class="inline-flex items-center gap-2 bg-[#1C2747] border border-white/10 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md hover:bg-opacity-90 transition-all duration-200">
+                        <i class="ph-bold ph-heart text-[#FFAF00] text-lg"></i>
+                        <span>Faire un don</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sidebar mobile (hors du header) -->
+    <div id="mobile-navigation"
+        class="fixed top-0 right-0 h-full w-full max-w-sm z-50 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out xl:hidden overflow-y-auto">
+        <div class="flex flex-col h-full">
+            <!-- En-tête de la sidebar -->
+            <div class="flex items-center justify-between p-4 border-b border-slate-200 bg-white sticky top-0">
+                <div class="flex items-center gap-2">
+                    <img src="src/assets/images/logo.png" alt="Dieu est ici" class="h-10 w-auto object-contain">
+                    <span class="font-semibold text-[#1C2747]">Menu</span>
+                </div>
+                <button type="button"
+                    class="close-sidebar p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
+                    aria-label="Fermer le menu">
+                    <i class="ph-bold ph-x text-2xl text-[#1C2747]"></i>
+                </button>
+            </div>
+
+            <!-- Liens de navigation -->
+            <div class="flex-1 py-6 px-4">
+                <div class="flex flex-col gap-2 text-[#1C2747] font-medium">
+                    <a href="index.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Accueil</a>
+                    <a href="a-propos.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">A
+                        propos</a>
+                    <a href="actions.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Nos
+                        actions</a>
+                    <a href="actualites.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Actualités</a>
+                    <a href="galerie.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Galerie</a>
+                    <a href="rejoindre.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Nous
+                        rejoindre</a>
+                </div>
+
+                <a href="dons.html"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1C2747] px-5 py-3 font-semibold text-white shadow-md transition-colors duration-200 hover:bg-opacity-90">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-lg"></i>
+                    <span>Faire un don</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay (fond sombre derrière la sidebar) -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 hidden xl:hidden transition-opacity duration-300">
+    </div>
+
+    
+    <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col  pt-36"
+        style="background-image: url('src/assets/images/img4.jpg');">
+
+        <div class="absolute inset-0 bg-black/60 pointer-events-none z-0"></div>
+
+        <div
+            class="flex-1 max-w-5xl mx-auto px-4 flex flex-col justify-center items-center text-center pb-16 relative z-10">
+
+            <h1
+                class="text-[#1C2747] text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] max-w-4xldrop-shadow-sm">
+                Inspirés par la <span class="text-[#FFAF00]">foi</span>,
+                l'<span class="text-[#1C2747]"> Engagés pour l'<span class="text-[#FFAF00]">humanité</span>
+            </h1>
+
+            <p class="mt-8 text-black text-lg sm:text-xl font-medium max-w-3xl leading-relaxed drop-shadow-sm">
+                Une mission portée par des valeurs chrétiennes pour accompagner et soutenir les plus vulnérables.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+                <a href="dons.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1C2747] text-white px-8 py-3.5 rounded-xl font-bold shadow-lg hover:bg-opacity-90 transition-all duration-200 text-base border border-white/10">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-xl"></i>
+                    <span>Faire un don</span>
+                </a>
+
+                <a href="rejoindre.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center border-3 border-[#1C2747] text-[#1C2747] px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:text-[#1C2747] transition-all duration-200 text-base">
+                    Nous rejoindre
+                </a>
+            </div>
+
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/90 pointer-events-none z-0">
+        </div>
+
+    </section>
+
+    <section class="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+
+        <div class="absolute inset-0 pointer-events-none select-none">
+            <div class="absolute top-[15%] left-[42%] w-4 h-4 rounded-full bg-[#FFAF00]/30"></div>
+            <div class="absolute top-[40%] left-[54%] w-5 h-5 rounded-full bg-[#FFAF00]/30 hidden md:block"></div>
+            <div class="absolute bottom-[10%] left-[22%] w-5 h-5 rounded-full bg-[#FFAF00]/30"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <div class="lg:col-span-7 flex flex-col items-start z-10">
+
+                    <div class="relative pb-4 mb-6">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#1C2747]">
+                            L'ONG et son Fondateur
+                        </h2>
+                        <div class="absolute bottom-0 left-0 w-24 h-1 bg-[#FFAF00] rounded-full"></div>
+                    </div>
+
+                    <div class="flex flex-col gap-5 text-slate-600 leading-relaxed text-base md:text-lg">
+                        <p>
+                            <strong class="text-[#1C2747] font-semibold">L'ONG ONG DIEU EST ICI</strong> est une
+                            organisation chrétienne et humanitaire engagée dans l'accompagnement spirituel, éducatif et
+                            social des personnes vulnérables. À travers des camps de prière, des formations
+                            professionnelles et des actions sociales, elle œuvre pour redonner espoir et favoriser
+                            l'épanouissement des communautés.
+                        </p>
+                        <p>
+                            Fondée sur des valeurs de foi, de solidarité et d'amour du prochain, cette initiative est
+                            portée par un fondateur animé par la volonté d'aider les personnes en difficulté et de
+                            contribuer à un avenir meilleur pour tous.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+
+                    <div
+                        class="absolute -left-10 top-1/2 -translate-y-1/2 w-[450px] h-[450px] border border-slate-200 rounded-full pointer-events-none hidden lg:block">
+                    </div>
+                    <div
+                        class="absolute -left-4 top-1/2 -translate-y-1/2 w-[380px] h-[380px] border border-slate-200 rounded-full pointer-events-none hidden lg:block">
+                    </div>
+
+                    <div
+                        class="relative w-full max-w-md lg:max-w-full aspect-[4/3] sm:aspect-square lg:aspect-[11/12] rounded-[2.5rem] overflow-hidden shadow-lg z-10">
+                        <img src="src/assets/images/img16.png" alt="Fondateur de l'ONG DIEU EST ICI"
+                            class="w-full h-full object-cover object-top">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full bg-[#F3F4F6] py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="relative inline-block pb-4 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#1C2747]">
+                        Vision - Mission - Valeurs
+                    </h2>
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-[#FFAF00] rounded-full"></div>
+                </div>
+                <p class="text-slate-500 text-base md:text-lg font-medium leading-relaxed">
+                    Les piliers qui orientent notre engagement pour l'accompagnement, l'éducation et la solidarité.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-white border border-[#1C2747]/20 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#1C2747] text-[#FFAF00] shrink-0">
+                            <i class="ph-bold ph-target text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1C2747]">Vision</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Construire une société solidaire où chaque personne vulnérable peut accéder à l'éducation, à
+                        l'accompagnement et à un avenir meilleur.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white border border-[#1C2747]/20 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#1C2747] text-[#FFAF00] shrink-0">
+                            <i class="ph-bold ph-check-square text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1C2747]">Mission</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Accompagner les personnes vulnérables à travers des actions spirituelles, éducatives, sociales
+                        et des programmes de réinsertion.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white border border-[#1C2747]/20 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-300 hover:shadow-md">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#1C2747] text-[#FFAF00] shrink-0">
+                            <i class="ph-bold ph-star text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1C2747]">Valeurs</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Fonder chacune de nos actions sur la foi, la solidarité, l'espoir et l'amour du prochain pour
+                        restaurer la dignité humaine.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="py-12 bg-gray-50 min-h-screen flex flex-col items-center justify-center font-sans">
+
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-[#1E293B] tracking-tight mb-2">
+                Equipe dirigeante
+            </h2>
+            <div class="w-24 h-1 bg-[#FFAF00] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl px-4 w-full">
+
+            <div
+                class="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                <div class="bg-[#DDE1E5] h-72 w-full overflow-hidden">
+                    <img src="chemin_vers_image_president.jpg" alt="ADETOLA Arouna Ichola"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 bg-white flex-grow flex flex-col justify-between border-t border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-wide">
+                        ADETOLA Arouna Ichola
+                    </h3>
+                    <p class="text-sm font-semibold text-[#15803D] uppercase tracking-wider">
+                        Président
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                <div class="bg-[#DDE1E5] h-72 w-full overflow-hidden">
+                    <img src="chemin_vers_image_secretaire.jpg" alt="ATIGNON Mathias Yaovi"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 bg-white flex-grow flex flex-col justify-between border-t border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-wide">
+                        ATIGNON Mathias Yaovi
+                    </h3>
+                    <p class="text-sm font-semibold text-[#15803D] uppercase tracking-wider">
+                        Secrétaire général
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-200/60 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                <div class="bg-[#DDE1E5] h-72 w-full overflow-hidden">
+                    <img src="chemin_vers_image_tresoriere.jpg" alt="BALLEY Sirikatou"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 bg-white flex-grow flex flex-col justify-between border-t border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-wide">
+                        BALLEY Sirikatou
+                    </h3>
+                    <p class="text-sm font-semibold text-[#15803D] uppercase tracking-wider">
+                        Trésorière
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section
+        class="relative w-full bg-cover bg-center bg-no-repeat py-20 md:py-28 flex flex-col items-center justify-center text-center select-none shadow-inner"
+        style="background-image: url('src/assets/images/img8.jpg');">
+
+        <div class="absolute inset-0 bg-black/85 pointer-events-none z-0"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 flex flex-col items-center">
+
+            <h2
+                class="text-white text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.2] max-w-3xl">
+                Apportons la <span class="text-[#FFAF00]">Lumière</span> Là Où Elle Manque
+            </h2>
+
+            <p class="mt-6 text-slate-300 text-base sm:text-lg md:text-xl font-normal max-w-2xl leading-relaxed">
+                Ensemble, bâtissons un monde fondé sur la foi, la solidarité et l’amour du prochain.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+
+                <a href="dons.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1C2747] text-white px-8 py-3.5 rounded-xl font-bold shadow-lg hover:bg-opacity-90 transition-all duration-200 text-base border border-white/10">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-xl"></i>
+                    <span>Faire un don</span>
+                </a>
+
+                <a href="rejoindre.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center border-2 border-white text-white px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:text-black transition-all duration-200 text-base">
+                    Nous rejoindre
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="w-full bg-cover bg-center bg-no-repeat py-16 md:py-24 select-none relative"
+        style="background-image: url('src/assets/images/img9.jpg');">
+
+        <div class="absolute inset-0 bg-black/50 pointer-events-none z-0"></div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-16 relative z-10">
+
+            <div class="w-full lg:w-5/12 flex flex-col justify-center text-left">
+                <h2 class="text-white text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight max-w-sm">
+                    Nous sommes à votre écoute
+                </h2>
+
+                <div class="mt-10 space-y-6">
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1C2747] text-[#FFAF00] shadow-sm border border-white/10">
+                            <i class="ph-bold ph-phone text-xl"></i>
+                        </div>
+                        <span class="text-white font-semibold text-base sm:text-lg tracking-wide">
+                            +229 01 97 21 99 96
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1C2747] text-[#FFAF00] shadow-sm border border-white/10">
+                            <i class="ph-bold ph-map-pin text-xl"></i>
+                        </div>
+                        <span class="text-white font-semibold text-base sm:text-lg tracking-wide">
+                            Womey ADJIHPEGON
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1C2747] text-[#FFAF00] shadow-sm border border-white/10">
+                            <i class="ph-bold ph-envelope text-xl"></i>
+                        </div>
+                        <a href="mailto:jeremyadetola@gmail.com"
+                            class="text-white font-semibold text-base sm:text-lg tracking-wide hover:text-[#FFAF00] transition-colors duration-200">
+                            jeremyadetola@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full lg:w-7/12">
+                <div
+                    class="bg-[#1C2747] text-white p-6 sm:p-10 rounded-3xl shadow-xl border border-white/10 flex flex-col w-full">
+
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-wide mb-8">
+                        Remplissez le formulaire
+                    </h3>
+
+                    <form action="#" method="POST" onsubmit="sendToWhatsApp(event)" class="space-y-6">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label for="last_name" class="text-sm font-medium text-slate-300">Nom</label>
+                                <input type="text" id="last_name" name="last_name" placeholder="ABBO"
+                                    class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200"
+                                    required>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="first_name" class="text-sm font-medium text-slate-300">Prénom</label>
+                                <input type="text" id="first_name" name="first_name" placeholder="Marc"
+                                    class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-sm font-medium text-slate-300">Email</label>
+                            <input type="email" id="email" name="email" placeholder="marcabbo@gmail.com"
+                                class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200"
+                                required>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-sm font-medium text-slate-300">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-3.5 bg-white text-slate-800 rounded-xl font-medium placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FFAF00] transition-all duration-200 resize-none"
+                                required></textarea>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit"
+                                class="w-auto inline-flex justify-center items-center bg-[#FFAF00] text-[#1C2747] text-base font-extrabold px-8 py-3.5 rounded-xl shadow-md hover:bg-opacity-90 active:scale-95 transition-all duration-200">
+                                Soumettre
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            const lastName = document.getElementById('last_name').value;
+            const firstName = document.getElementById('first_name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const phoneNumber = "2290197219996";
+
+            const text = `Nouveau message de contact\n\n` +
+                `Nom : ${lastName}\n` +
+                `Prénom : ${firstName}\n` +
+                `Email : ${email}\n\n` +
+                `Message :\n${message}`;
+
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(text)}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+
+
+
+    <footer class="w-full bg-[#1C2747] text-white pt-16 pb-8 select-none border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+
+                <div class="lg:col-span-4 flex flex-col gap-6">
+                    <div class="flex items-center">
+                        <img src="src/assets/images/logo.png" alt="Logo DIEU EST ICI"
+                            class="h-16 w-auto object-contain">
+                    </div>
+                    <p class="text-slate-300 text-sm sm:text-base font-medium leading-relaxed max-w-sm">
+                        L'ONG DIEU EST ICI œuvre pour la transformation spirituelle, sociale et professionnelle des
+                        personnes
+                        vulnérables en Afrique de l'Ouest.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-3 lg:pl-8 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Lien rapide
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                A propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="actions.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Nos actions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="galerie.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Galerie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="rejoindre.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Ressource
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="contact.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dons.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Faire un don
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Politique de confidentialité
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="politique.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Confidentialité CGU
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col items-center justify-center text-center">
+                <p class="text-slate-400 text-xs sm:text-sm font-medium tracking-wide">
+                    Copyright@ DIEU EST ICI 2026
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="src/scripts/script-index.js"></script>
+
+
+
+
+</body>
+
+</html>

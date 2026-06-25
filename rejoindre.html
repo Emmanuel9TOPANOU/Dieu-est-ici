@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dieu est ici</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" type="image/png" href="src/assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@latest/dist/css/phosphor.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+
+<body>
+
+
+
+    <div id="fixed-header-container"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-md border-b border-white/20">
+
+        <div id="top-bar"
+            class="w-full bg-[#1C2747] text-white text-sm font-medium px-4 md:px-8 py-2.5 flex flex-col sm:flex-row justify-between items-center gap-3 select-none transition-all duration-300 ease-in-out">
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-6">
+                <a href="tel:+2290197219996"
+                    class="flex items-center gap-2 hover:text-[#FFAF00] transition-colors duration-200">
+                    <i class="ph-bold ph-phone text-[#FFAF00] text-base"></i>
+                    <span>+229 01 97 21 99 96</span>
+                </a>
+
+                <div class="flex items-center gap-2">
+                    <i class="ph-bold ph-map-pin text-[#FFAF00] text-base"></i>
+                    <span>Womey ADJIHPEGON</span>
+                </div>
+            </div>
+
+            <div class="tracking-wide text-center uppercase font-semibold text-[#FFAF00]">
+                FOI - SOLIDARITE - ESPOIR
+            </div>
+
+            <div class="flex items-center gap-5 text-lg">
+                <a href="#" aria-label="Facebook"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-facebook-logo"></i>
+                </a>
+
+                <a href="#" aria-label="X"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-x-logo"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube"
+                    class="hover:text-[#FFAF00] transition-colors duration-200 flex items-center">
+                    <i class="ph-bold ph-youtube-logo"></i>
+                </a>
+            </div>
+        </div>
+
+        <header class="relative w-full h-24 flex items-center">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+                <div class="flex items-center shrink-0">
+                    <img src="src/assets/images/logo.png" alt="Dieu est ici" class="h-20 w-auto object-contain">
+                </div>
+
+                <div class="flex items-center gap-3 lg:gap-4">
+                    <button type="button"
+                        class="inline-flex xl:hidden items-center justify-center w-11 h-11 rounded-xl border border-[#1C2747]/10 bg-white text-[#1C2747] shadow-sm transition-colors duration-200 hover:bg-slate-50"
+                        aria-controls="mobile-navigation" aria-expanded="false" data-nav-toggle>
+                        <i class="ph-bold ph-list text-2xl" data-nav-icon></i>
+                        <span class="sr-only">Ouvrir le menu</span>
+                    </button>
+                </div>
+
+                <nav class="hidden xl:flex items-center gap-8 text-[#1C2747] font-medium">
+                    <a href="index.html" class="text-[#FFAF00] transition-colors duration-200">Accueil</a>
+                    <a href="a-propos.html" class="hover:text-[#FFAF00] transition-colors duration-200">A propos</a>
+                    <a href="actions.html" class="hover:text-[#FFAF00] transition-colors duration-200">Nos
+                        actions</a>
+                    <a href="actualites.html" class="hover:text-[#FFAF00] transition-colors duration-200">Actualités</a>
+                    <a href="galerie.html" class="hover:text-[#FFAF00] transition-colors duration-200">Galerie</a>
+                    <a href="rejoindre.html" class="hover:text-[#FFAF00] transition-colors duration-200">Nous
+                        rejoindre</a>
+                </nav>
+
+                <div class="hidden sm:block">
+                    <a href="dons.html"
+                        class="inline-flex items-center gap-2 bg-[#1C2747] border border-white/10 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md hover:bg-opacity-90 transition-all duration-200">
+                        <i class="ph-bold ph-heart text-[#FFAF00] text-lg"></i>
+                        <span>Faire un don</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sidebar mobile (hors du header) -->
+    <div id="mobile-navigation"
+        class="fixed top-0 right-0 h-full w-full max-w-sm z-50 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out xl:hidden overflow-y-auto">
+        <div class="flex flex-col h-full">
+            <!-- En-tête de la sidebar -->
+            <div class="flex items-center justify-between p-4 border-b border-slate-200 bg-white sticky top-0">
+                <div class="flex items-center gap-2">
+                    <img src="src/assets/images/logo.png" alt="Dieu est ici" class="h-10 w-auto object-contain">
+                    <span class="font-semibold text-[#1C2747]">Menu</span>
+                </div>
+                <button type="button"
+                    class="close-sidebar p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
+                    aria-label="Fermer le menu">
+                    <i class="ph-bold ph-x text-2xl text-[#1C2747]"></i>
+                </button>
+            </div>
+
+            <!-- Liens de navigation -->
+            <div class="flex-1 py-6 px-4">
+                <div class="flex flex-col gap-2 text-[#1C2747] font-medium">
+                    <a href="index.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Accueil</a>
+                    <a href="a-propos.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">A
+                        propos</a>
+                    <a href="actions.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Nos
+                        actions</a>
+                    <a href="actualites.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Actualités</a>
+                    <a href="galerie.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Galerie</a>
+                    <a href="rejoindre.html"
+                        class="rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-slate-50 hover:text-[#FFAF00]">Nous
+                        rejoindre</a>
+                </div>
+
+                <a href="dons.html"
+                    class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1C2747] px-5 py-3 font-semibold text-white shadow-md transition-colors duration-200 hover:bg-opacity-90">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-lg"></i>
+                    <span>Faire un don</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay (fond sombre derrière la sidebar) -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 hidden xl:hidden transition-opacity duration-300">
+    </div>
+
+   <section class="relative min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col  pt-36"
+        style="background-image: url('src/assets/images/img2.jpg');">
+
+        <div class="absolute inset-0 bg-black/60 pointer-events-none z-0"></div>
+
+        <div
+            class="flex-1 max-w-5xl mx-auto px-4 flex flex-col justify-center items-center text-center pb-16 relative z-10">
+
+            <h1
+                class="text-[#1C2747] text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] max-w-4xldrop-shadow-sm">
+                Rejoignez notre communauté
+            </h1>
+
+
+
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+                <a href="dons.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1C2747] text-white px-8 py-3.5 rounded-xl font-bold shadow-lg hover:bg-opacity-90 transition-all duration-200 text-base border border-white/10">
+                    <i class="ph-bold ph-heart text-[#FFAF00] text-xl"></i>
+                    <span>Faire un don</span>
+                </a>
+
+                <a href="rejoindre.html"
+                    class="w-full sm:w-auto inline-flex items-center justify-center border-3 border-[#1C2747] text-[#1C2747] px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:text-[#1C2747] transition-all duration-200 text-base">
+                    Nous rejoindre
+                </a>
+            </div>
+
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/90 pointer-events-none z-0">
+        </div>
+
+    </section>
+
+    <section class="max-w-6xl mx-auto my-10 p-5 flex flex-col md:flex-row gap-12 items-start font-sans">
+
+        <div class="flex-1 md:pr-5">
+            <h2 class="text-[#1C2747] text-4xl font-bold mb-5">Nous soutenir</h2>
+            <p class="text-gray-600 leading-relaxed mb-10 text-base">
+                Que vous souhaitiez nous soutenir, collaborer, ou simplement en savoir plus sur nos actions, nous sommes
+                à votre écoute.
+            </p>
+
+            <div class="space-y-6">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="bg-[#1C2747] text-[#FFAF00] w-11 h-11 rounded-lg flex items-center justify-center text-lg shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </div>
+                    <a href="tel:+2290197219996" class="text-[#1C2747] font-semibold text-lg hover:underline">+229 01 97
+                        21 99 96</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div
+                        class="bg-[#1C2747] text-[#FFAF00] w-11 h-11 rounded-lg flex items-center justify-center text-lg shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <span class="text-[#1C2747] font-semibold text-lg">Womey ADJIHPEGON</span>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div
+                        class="bg-[#1C2747] text-[#FFAF00] w-11 h-11 rounded-lg flex items-center justify-center text-lg shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <a href="mailto:jeremyadetola@gmail.com"
+                        class="text-[#1C2747] font-semibold text-lg hover:underline">jeremyadetola@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-[1.2] w-full bg-[#1C2747] rounded-xl p-8 md:p-10 text-white shadow-xl">
+            <h3 class="text-2xl font-bold mb-2">Envoyez-nous un message</h3>
+            <p class="text-blue-300 text-sm mb-6">Tous les champs marqués sont requis</p>
+
+            <form id="contactForm" class="space-y-5">
+                <div class="flex flex-col md:flex-row gap-5">
+                    <div class="flex-1 flex flex-col gap-2">
+                        <label class="text-sm font-semibold">Nom <span class="text-red-500 ml-0.5">*</span></label>
+                        <input type="text" name="nom" required placeholder="TOPANOU"
+                            class="w-full px-4 py-3 rounded-md bg-white text-[#1C2747] text-sm outline-none border border-transparent focus:border-2 focus:border-[#FFAF00] transition-all">
+                    </div>
+                    <div class="flex-1 flex flex-col gap-2">
+                        <label class="text-sm font-semibold">Prénom <span class="text-red-500 ml-0.5">*</span></label>
+                        <input type="text" name="prenom" required placeholder="Emmanuel"
+                            class="w-full px-4 py-3 rounded-md bg-white text-[#1C2747] text-sm outline-none border border-transparent focus:border-2 focus:border-[#FFAF00] transition-all">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-semibold">Email <span class="text-red-500 ml-0.5">*</span></label>
+                    <input type="email" name="email" required placeholder="topanouE@gmail.com"
+                        class="w-full px-4 py-3 rounded-md bg-white text-[#1C2747] text-sm outline-none border border-transparent focus:border-2 focus:border-[#FFAF00] transition-all">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-semibold">Vous êtes ?</label>
+                    <div class="flex flex-wrap gap-2.5 mt-1">
+                        <div class="radio-tag cursor-pointer px-4 py-2 rounded-full text-sm flex items-center gap-2 transition-all duration-300 select-none bg-[#00a86b] border border-[#00a86b]"
+                            data-value="Donateur">
+                            <span class="w-2 h-2 rounded-full bg-white border border-white inline-block"></span>Donateur
+                        </div>
+                        <div class="radio-tag cursor-pointer px-4 py-2 rounded-full text-sm flex items-center gap-2 transition-all duration-300 select-none bg-white/10 border border-white/20"
+                            data-value="Partenaire">
+                            <span class="w-2 h-2 rounded-full border border-white inline-block"></span>Partenaire
+                        </div>
+                        <div class="radio-tag cursor-pointer px-4 py-2 rounded-full text-sm flex items-center gap-2 transition-all duration-300 select-none bg-white/10 border border-white/20"
+                            data-value="Journaliste">
+                            <span class="w-2 h-2 rounded-full border border-white inline-block"></span>Journaliste
+                        </div>
+                        <div class="radio-tag cursor-pointer px-4 py-2 rounded-full text-sm flex items-center gap-2 transition-all duration-300 select-none bg-white/10 border border-white/20"
+                            data-value="Bénévole">
+                            <span class="w-2 h-2 rounded-full border border-white inline-block"></span>Bénévole
+                        </div>
+                        <div class="radio-tag cursor-pointer px-4 py-2 rounded-full text-sm flex items-center gap-2 transition-all duration-300 select-none bg-white/10 border border-white/20"
+                            data-value="Autre">
+                            <span class="w-2 h-2 rounded-full border border-white inline-block"></span>Autre
+                        </div>
+                    </div>
+                    <input type="hidden" name="profil_type" id="profil_type" value="Donateur">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-semibold">Objet</label>
+                    <div class="relative select-none" id="customSelect">
+                        <div
+                            class="w-full px-4 py-3 rounded-md bg-white text-[#1C2747] text-sm flex justify-between items-center cursor-pointer shadow-sm">
+                            <span id="selected-text">Sélectionnez un objet...</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-200"
+                                id="select-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <div class="hidden absolute top-full left-0 right-0 bg-[#1C2747] border border-white/20 border-t-0 rounded-b-md z-20 shadow-2xl mt-0.5 overflow-hidden"
+                            id="customOptions">
+                            <div class="px-4 py-3 cursor-pointer hover:bg-white/10 transition-colors text-white text-sm"
+                                data-value="Faire un don">Faire un don</div>
+                            <div class="px-4 py-3 cursor-pointer hover:bg-white/10 transition-colors text-white text-sm"
+                                data-value="Devenir bénévole">Devenir bénévole</div>
+                            <div class="px-4 py-3 cursor-pointer hover:bg-white/10 transition-colors text-white text-sm"
+                                data-value="Proposition de partenariat">Proposition de partenariat</div>
+                            <div class="px-4 py-3 cursor-pointer hover:bg-white/10 transition-colors text-white text-sm"
+                                data-value="Demande d’information">Demande d’information</div>
+                            <div class="px-4 py-3 cursor-pointer hover:bg-white/10 transition-colors text-white text-sm"
+                                data-value="Demande média/ Presse">Demande média/ Presse</div>
+                            <div class="px-4 py-3 cursor-pointer hover:bg-white/10 transition-colors text-white text-sm"
+                                data-value="Autre">Autre</div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="objet" id="objet_val" value="">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-semibold">Message</label>
+                    <textarea name="message" placeholder="Votre message ici..."
+                        class="w-full px-4 py-3 rounded-md bg-white text-[#1C2747] text-sm outline-none border border-transparent focus:border-2 focus:border-[#FFAF00] transition-all min-h-[120px] resize-y"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-[#FFAF00] text-[#1C2747] font-bold py-3.5 px-4 rounded-md text-base hover:bg-[#e69d00] active:scale-[0.99] transition-all mt-2 shadow-md">
+                    Soumettre le formulaire
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // --- GESTION DES ROLES (Changement dynamique de la couleur verte) ---
+        const tags = document.querySelectorAll('.radio-tag');
+        const profilInput = document.getElementById('profil_type');
+
+        tags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                tags.forEach(t => {
+                    t.classList.remove('bg-[#00a86b]', 'border-[#00a86b]');
+                    t.classList.add('bg-white/10', 'border-white/20');
+                    t.querySelector('span').classList.remove('bg-white');
+                });
+
+                tag.classList.remove('bg-white/10', 'border-white/20');
+                tag.classList.add('bg-[#00a86b]', 'border-[#00a86b]');
+                tag.querySelector('span').classList.add('bg-white');
+
+                profilInput.value = tag.getAttribute('data-value');
+            });
+        });
+
+        // --- GESTION DU DROPDOWN OBJET ---
+        const selectWrapper = document.getElementById('customSelect');
+        const trigger = selectWrapper.firstElementChild;
+        const optionsMenu = document.getElementById('customOptions');
+        const arrow = document.getElementById('select-arrow');
+        const selectedText = document.getElementById('selected-text');
+        const objetInput = document.getElementById('objet_val');
+
+        trigger.addEventListener('click', (e) => {
+            optionsMenu.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+            e.stopPropagation();
+        });
+
+        optionsMenu.querySelectorAll('[data-value]').forEach(option => {
+            option.addEventListener('click', function () {
+                const val = this.getAttribute('data-value');
+                selectedText.innerText = val;
+                objetInput.value = val;
+                optionsMenu.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            });
+        });
+
+        window.addEventListener('click', () => {
+            optionsMenu.classList.add('hidden');
+            arrow.classList.remove('rotate-180');
+        });
+
+        // --- REDIRECTION AUTOMATIQUE VERS WHATSAPP ---
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const data = Object.fromEntries(new FormData(this).entries());
+            const phone = "2290197219996";
+
+            // Construction du message textuel propre
+            let messageWhatsApp = `Nouveau message de contact\n\n`;
+            messageWhatsApp += `• Nom : ${data.nom}\n`;
+            messageWhatsApp += `• Prénom : ${data.prenom}\n`;
+            messageWhatsApp += `• Email : ${data.email}\n`;
+            messageWhatsApp += `• Profil :${data.profil_type}\n`;
+            messageWhatsApp += `• Objet : ${data.objet ? data.objet : 'Non spécifié'}\n\n`;
+            messageWhatsApp += `*Message :\n${data.message ? data.message : 'Pas de texte fourni.'}`;
+
+            // Encodage au format URL standard
+            const urlEncodedMessage = encodeURIComponent(messageWhatsApp);
+
+            // Lien universel WhatsApp (fonctionne sur PC et mobiles)
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${urlEncodedMessage}`;
+
+            // Ouverture de la discussion WhatsApp
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+
+
+
+ <footer class="w-full bg-[#1C2747] text-white pt-16 pb-8 select-none border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+
+                <div class="lg:col-span-4 flex flex-col gap-6">
+                    <div class="flex items-center">
+                        <img src="src/assets/images/logo.png" alt="Logo DIEU EST ICI"
+                            class="h-16 w-auto object-contain">
+                    </div>
+                    <p class="text-slate-300 text-sm sm:text-base font-medium leading-relaxed max-w-sm">
+                        L'ONG DIEU EST ICI œuvre pour la transformation spirituelle, sociale et professionnelle des
+                        personnes
+                        vulnérables en Afrique de l'Ouest.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-3 lg:pl-8 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Lien rapide
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="index.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-propos.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                A propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="actions.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Nos actions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="galerie.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Galerie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="rejoindre.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Nous rejoindre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Ressource
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="contact.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dons.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Faire un don
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 flex flex-col gap-4">
+                    <h4 class="text-[#FFAF00] font-bold text-lg tracking-wide">
+                        Politique de confidentialité
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="politique.html"
+                                class="text-slate-300 hover:text-white font-medium text-sm sm:text-base transition-colors duration-200 block">
+                                Confidentialité CGU
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col items-center justify-center text-center">
+                <p class="text-slate-400 text-xs sm:text-sm font-medium tracking-wide">
+                    Copyright@ DIEU EST ICI 2026
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="src/scripts/script-index.js"></script>
+
+
+
+
+</body>
+
+</html>
